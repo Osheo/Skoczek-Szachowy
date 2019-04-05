@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Algorytmy</title>
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700" rel="stylesheet" />
+        <link type="text/css" rel="stylesheet" href="materialize.min.css" media="screen,projection" />
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+
+    <body>
+        <header>
+            <div class="input-range">
+                <h4 id="speed">Prędkość</h4>
+                <form action="#">
+                    <p class="range-field">
+                        <input type="range" class="active" value="10" id="myRange" min="1" max="100" oninput="getSpeed(this.value)" />
+                    </p>
+                </form>
+            </div>
+        </header>
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <h4>Udało się!</h4>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect btn center waves-green">Jeszcze raz!</a>
+            </div>
+        </div>
+        <main>
+            <div class="card-container">
+                <div class="card card0"></div>
+                <div class="card card0"></div>
+                <div class="card card0"></div>
+                <div class="card card0"></div>
+                <div class="card card0"></div>
+                <div class="card card1"></div>
+                <div class="card card1"></div>
+                <div class="card card1"></div>
+                <div class="card card1"></div>
+                <div class="card card1"></div>
+                <div class="card card2"></div>
+                <div class="card card2"></div>
+                <div class="card card2"></div>
+                <div class="card card2"></div>
+                <div class="card card2"></div>
+                <div class="card card3"></div>
+                <div class="card card3"></div>
+                <div class="card card3"></div>
+                <div class="card card3"></div>
+                <div class="card card3"></div>
+                <div class="card card4"></div>
+                <div class="card card4"></div>
+                <div class="card card4"></div>
+                <div class="card card4"></div>
+                <div class="card card4"></div>
+            </div>
+        </main>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript" src="materialize.min.js"></script>
+        <script src="index.js" async defer></script>
+    </body>
+</html>

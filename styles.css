@@ -1,0 +1,117 @@
+*:focus {
+    outline: none;
+}
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header {
+    width: 400px;
+    background: #fff;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+.dimension {
+    height: 100px;
+    width: 350px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.dimension button {
+    height: 40px;
+    width: 130px;
+    border: 0;
+    outline: none;
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+    font-size: 1em;
+    background: #fff;
+}
+.dimension button:hover {
+    background: #f0f0f0;
+}
+header h4 {
+    margin-bottom: 30px;
+}
+header input {
+    width: 300px;
+    margin: 0 auto;
+    display: block;
+}
+main {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-container {
+    height: 50vh;
+    width: 50vh;
+    box-shadow: 0px 4px 21px rgba(0, 0, 0, 0.15);
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px;
+    background: #fff;
+}
+.card {
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    margin: 0 !important;
+    height: 18%;
+    width: 18%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.2em;
+    outline: none;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+}
+.activeCard {
+    animation: Scale 0.75s;
+    background-color: #f0f0f0;
+}
+/* Keyframes */
+@keyframes Scale {
+    30% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+input[type='range']::-moz-range-thumb {
+    background: #478ce4 !important;
+}
+input[type='range'] + .thumb {
+    font-weight: bold;
+    background-color: #2572d5;
+}
+.modal-content {
+    text-align: center;
+}
+.modal-footer {
+    text-align: center !important;
+}
+.modal {
+    width: 500px !important;
+    top: 50px !important;
+}
